@@ -1,0 +1,24 @@
+What’s your favorite tool or library for Android? Why is it so useful?
+Butterknife is one of my favourites, it makes it easy to define widget whitout the need to write a lotof code, so the code kept organized and easy to read and focus on the impoetant parts.
+You want to open a map app from an app that you’re building. The address, city, state, and ZIP code are provided by the user. What steps are involved in sending that data to a map app?
+using intents to send data.
+Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the "compressed" string would not become smaller than the original string, your method should return the original string. The method signature is: “public static String compress(String input)” You must write all code in proper Java, and please include import statements for any libraries you use.
+public static String compress(String input){
+String decompress;
+String[] s=input.split("");
+for (int i = 2 ; i<s.length()-1;i+2){
+decompress=decompress+ StringUtils.repeat(s[i-1],i);
+}
+return decompress;
+}
+List and explain the differences between four different options you have for saving data while making an Android app. Pick one, and explain (without code) how you would implement it.
+Internal storage: where you can store data in files for the app on the device itself
+External storage: where you store data in shared files on the device so other apps can see it to 
+Shared preferences: you can store primitives to indicate the condition of some features on the app 
+you use shared preference function to store primitives and check the shared preference when the app starts to indicate if its full, if so you use the data to set some of the features that user had set previously
+Database: Like SQLite you store structured data to be easy to store, query, edit, and delete in the future
+
+What are your thoughts about Fragments? Do you like or hate them? Why?
+I find them hard to deal with , but they are very useful because they are reusable through the app and could be replaced in the same activity so they decrease the amount of written code so much 
+If you were to start your Android position today, what would be your goals a year from now?
+my goal will be to build many apps with different features in oreder to learn as much as i can from my first year
